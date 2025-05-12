@@ -1,3 +1,6 @@
+import torch
+import numpy as np
+
 def convert(torch_list, tf_list, shape_list):
     '''
     convert weight from torch layers to tensorflow layers
