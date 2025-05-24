@@ -2,6 +2,18 @@
 convert torch model weight to tensorflow one, try without adding transpose layers
 
 
+## installation
+
+Install proper version of `torch`, `torchvision`, that fit the environment, cuda version, etc. 
+
+See torch official [Previous PyTorch Versions](https://pytorch.org/get-started/previous-versions/)
+
+Install `tensorflow2`
+
+Install `matplotlib`
+
+Switch `numpy` version if needed.
+
 ## Exmaple
 
 Following example model are from [torch official CNN tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html)
