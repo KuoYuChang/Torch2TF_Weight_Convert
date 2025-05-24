@@ -125,3 +125,7 @@ python example.py
 ```
 
 Demonstrate that torch output will be very close to tensorflow one.
+
+Or run on Colab, to further explore:
+
+[Torch_Convert_TF](https://github.com/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb)
