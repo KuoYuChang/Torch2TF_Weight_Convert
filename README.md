@@ -116,3 +116,12 @@ convert(torch_list, tf_list, shape_list)
 ```
 
 Tensorflow model variable `net_tf` are ready to do the same things as torch one
+
+
+### simple example of running convert function
+
+```bash
+python example.py
+```
+
+Demonstrate that torch output will be very close to tensorflow one.
