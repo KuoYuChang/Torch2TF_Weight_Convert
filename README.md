@@ -16,6 +16,19 @@ Switch `numpy` version if needed.
 
 ## Exmaple
 
+### simple example of running convert function
+
+```bash
+python example.py
+```
+
+Or run on Colab, to further explore:
+
+[Torch_Convert_TF](https://github.com/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb)
+
+
+### Brief instruction
+
 Following example model are from [torch official CNN tutorial](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html)
 
 Example torch model like
@@ -118,14 +131,4 @@ convert(torch_list, tf_list, shape_list)
 Tensorflow model variable `net_tf` are ready to do the same things as torch one
 
 
-### simple example of running convert function
-
-```bash
-python example.py
-```
-
 Demonstrate that torch output will be very close to tensorflow one.
-
-Or run on Colab, to further explore:
-
-[Torch_Convert_TF](https://github.com/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KuoYuChang/Colab_MIT/blob/main/tools/Torch_Convert_TF.ipynb)
