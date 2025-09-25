@@ -42,6 +42,7 @@ def convert(torch_list, tf_list, shape_list):
     
     num = len(torch_list)
 
+    conv_permu = (2, 3, 1, 0)
     dense_permu = (1, 2, 0)
 
     for i in range(num):
@@ -49,7 +50,7 @@ def convert(torch_list, tf_list, shape_list):
         tf_layer = tf_list[i]
 
         if type(torch_layer) == torch.nn.modules.conv.Conv2d:
-            weight_np = torch_layer.weight.data.permute(2,3,1,0).cpu().detach().numpy()
+            weight_np = torch_layer.weight.data.permute(conv_permu).cpu().detach().numpy()
             bias_np = torch_layer.bias.data.cpu().detach().numpy()
 
         elif type(torch_layer) == torch.nn.modules.linear.Linear:
