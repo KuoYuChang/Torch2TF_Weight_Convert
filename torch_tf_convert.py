@@ -42,7 +42,6 @@ def convert(torch_list, tf_list, shape_list):
     
     num = len(torch_list)
 
-    trans_permu = (0, 2, 3, 1)
     dense_permu = (1, 2, 0)
 
     for i in range(num):
