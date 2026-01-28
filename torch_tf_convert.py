@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-def convert(torch_list, tf_list, shape_list):
+def convert(torch_list, tf_list, shape_list, conv_permu=(2, 3, 1, 0), dense_permu=(1, 2, 0)):
     '''
     convert weight from torch layers to tensorflow layers
     Without adding transpose layers
@@ -42,8 +42,6 @@ def convert(torch_list, tf_list, shape_list):
     
     num = len(torch_list)
 
-    conv_permu = (2, 3, 1, 0)
-    dense_permu = (1, 2, 0)
 
     for i in range(num):
         torch_layer = torch_list[i]
